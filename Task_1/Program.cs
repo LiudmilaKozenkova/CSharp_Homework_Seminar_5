@@ -31,7 +31,6 @@ void Print(int[] array)
     for (int i = 0; i < size; i++)
     {
         Console.Write(array[i] + " ");
-        i++;
     }
     Console.WriteLine();
 }
@@ -39,22 +38,20 @@ void Print(int[] array)
 // 4. Найти количество четных чисел в массиве
 int Final(int[] col)
 {
-    int count = 0;
+    int sum = 0;
     int size = col.Length;
     for (int i = 0; i < size; i++)
     {
         if (col[i] % 2 == 0)
         {
-            count += 1;
+            sum += 1;
         }
     }
-    return count;
+    return sum;
 }
 
-
-int[] data = CreateArray(GetIntValue(5, 7));
+int[] data = CreateArray(GetIntValue(5, 10));
 Print(data);
 Fill(data, 100, 1000);
 Print(data);
-int EvenElements = Final(data);
-Console.WriteLine(EvenElements);
+Console.WriteLine(Final(data));
