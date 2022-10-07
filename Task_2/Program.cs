@@ -47,6 +47,7 @@ int SumUnevenPosNumbers(int[] collection)
     }
     return sum;
 }
+
 int[] set = Create(GetIntValue(3, 6));
 Fill(set, 1, 10);
 Print(set);
